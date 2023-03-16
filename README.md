@@ -1,4 +1,4 @@
-# TransVG
+# HCCAN
 <p align="center"> <img src='docs/HCCAN.png' align="center" height="380px"> </p>
 
 This is an implementation of HCCAN.

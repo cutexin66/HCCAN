@@ -1,5 +1,5 @@
-from .mhcan import MHCAN
+from .hccan import HCCAN
 
 
 def build_model(args):
-    return MHCAN(args)
+    return HCCAN(args)

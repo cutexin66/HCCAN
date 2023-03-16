@@ -10,9 +10,9 @@ from .vl_transformer import build_vl_transformer
 from utils.box_utils import xywh2xyxy
 
 
-class MHCAN(nn.Module):
+class HCCAN(nn.Module):
     def __init__(self, args):
-        super(MHCAN, self).__init__()
+        super(HHCAN, self).__init__()
         hidden_dim = args.vl_hidden_dim
         divisor = 16 if args.dilation else 32#div
         self.num_visu_token = int((args.imsize / divisor) ** 2)
@@ -20,9 +20,6 @@ class MHCAN(nn.Module):
 
         self.visumodel = build_detr(args)
         self.textmodel = build_bert(args)
-
-        #origion model
-        #self.visumodel1 = build_detr1(args)
 
         num_total = self.num_visu_token + self.num_text_token + 1
         self.vl_pos_embed = nn.Embedding(num_total, hidden_dim)

@@ -131,7 +131,7 @@ def get_args_parser():
     # parser.add_argument('--eval_set', default='text', type=str)
     # parser.add_argument('--eval_model', default='', type=str)
     parser.add_argument('--eval_set', default='val', type=str)
-    parser.add_argument('--eval_model', default='./checkpoints/MHCAN_R50_unc.pth', type=str)
+    parser.add_argument('--eval_model', default='./checkpoints/hccan_flickr.pth', type=str)
     return parser
 
 
