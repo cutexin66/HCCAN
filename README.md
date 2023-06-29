@@ -85,5 +85,3 @@ The models with ResNet-50 backbone is available in [[Gdrive]](https://drive.goog
 ### Acknowledge
 This codebase is partially based on [TransVG](https://github.com/djiajunustc/TransVG) and [DETR](https://github.com/facebookresearch/detr).
 
-### Correction
-There is a small error about the batch size in the paper. The batch size can be adjusted according to your memory size, but if it is RTX3090, we recommend around 10.
