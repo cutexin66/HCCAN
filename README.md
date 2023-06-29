@@ -3,6 +3,8 @@
 
 This is an implementation of HCCAN.
 
+###Update
+Some updates and corrections, please see [update.md](update/update.md)
     
 
 ### Installation
